@@ -1,0 +1,64 @@
+.ServicesTables {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Service-item {
+    position: relative;
+    height: max-content;
+    margin: 1rem auto;
+    width: 550px;
+    text-align: center;
+}
+
+.Service-item-dot {
+    height: 21px;
+    width: 21px;
+    background-color: #00ffee;
+    box-shadow: 0 0 25px #00ffee, 0 0 50px #00ffee;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+
+.Service-item-content {
+    background-color: #131313;
+    width: 100% !important;
+    height: 100% !important;
+    border: 3px solid #00ffee;
+    color: #00ffee;
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px #00ffee;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.Service-item-content:hover {
+    box-shadow: 0 0 25px #00ffee;
+    background-color: #202020;
+}
+.Service-item-content:hover > * {
+    color: #00ffee !important;
+
+}
+
+.Service-item-content h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.Service-item-content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}

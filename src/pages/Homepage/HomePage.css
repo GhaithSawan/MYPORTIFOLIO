@@ -1,0 +1,33 @@
+.animattextdiv span{
+    display: inline-block;
+    overflow: hidden;
+    border-right: 1px #00ffee solid ;
+    animation: typing 5s steps(40 , end) infinite;
+    white-space: nowrap;
+    padding: 2 !important;
+}
+.animattextdiv{
+    display: inline-block;
+    padding: 0 !important;
+
+}
+
+.ainhome1{
+    color: black !important;
+
+}
+.ainhome2{
+    color: #00ffee !important;
+
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 92%;
+    }
+}
+.right img{
+    filter: drop-shadow(0 0 4px #00ffeea0);
+}

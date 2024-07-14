@@ -1,0 +1,90 @@
+.timeline-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.timeline-items::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #00ffee;
+    left: calc(50% - 8px);
+}
+.timeline-item{
+    margin-bottom: 40px ;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child {
+    margin-bottom: 0px;
+}
+
+.timeline-item:nth-child(odd) {
+    text-align: right;
+    padding-right: calc(50% + 30px);
+}
+
+.timeline-item:nth-child(even) {
+    padding-left: 20px;
+    padding-left: calc(50% + 30px);
+}
+
+.timeline-dot {
+    height: 21px;
+    width: 21px;
+    background-color: #00ffee;
+    box-shadow: 0 0 25px #00ffee, 0 0 50px #00ffee;
+    position: absolute;
+    left: calc(50% - 15px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline-date {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+
+.timeline-content {
+    background-color: #131313;
+    border: 3px solid #00ffee;
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px #00ffee;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.timeline-content:hover {
+    box-shadow: 0 0 25px #00ffee;
+}
+
+.timeline-content:hover {
+    box-shadow: 0 0 25px #00ffee;
+    background-color: #202020;
+}
+.timeline-content:hover > * {
+    color: #00ffee !important;
+}
+.timeline-content:hover > button {
+    color: black !important;
+}
+
+
+
+.timeline-content h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
